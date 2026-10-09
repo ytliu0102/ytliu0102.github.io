@@ -87,7 +87,7 @@ Farthest Point Sampling (FPS) is the de-facto down-sampling operator in point-cl
 
 <details>
 <summary>Abstract</summary>
-Neural networks (NNs) implemented on field-programmable gate arrays (FPGAs) provide fast, high-fidelity solutions for processing readout signals from quantum information processors. However, application-specific integrated circuits (ASICs) instead of FPGAs hold the potential for improved performance, a largely unexplored path. This work proposes specialized hardware for NN-based qubit-state discrimination. We optimize the NN architecture to minimize resource requirements by reducing the layer width, employing linear activation functions, and weight quantization. Quantization-aware training is used to preserve accuracy despite these optimizations. Next, a compute array employing output stationary dataflow is chosen to process the NN workload. The compute array with abundant multipliers and adders can complete one NN inference in 63 ns, which makes it a good candidate for real-time qubit-state discrimination.
+Neural networks (NNs) for qubit-state discrimination are typically run on FPGAs; ASICs offer further latency and efficiency gains, a largely unexplored path. We propose specialized ASIC hardware for NN-based qubit-state discrimination: a compact NN architecture (narrow layers, linear activations, quantization-aware training) paired with an output-stationary compute array. The resulting design completes one inference in 63 ns, making it well suited for real-time qubit-state discrimination.
 
 </details>
 
