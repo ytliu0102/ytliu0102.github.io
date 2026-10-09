@@ -17,21 +17,21 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-I am currently a Master’s student in Electronic Engineering at Nanyang Technological University. I once served as a research assistant at the Institute of Microelectronics (IME), A*STAR, supervised by Prof. Wang Ling Goh and Prof. An Tuan Do. I received the Bachelor degree of Bachelor of Electronic Information Engineering from Wuhan University, Wuhan, China, in Jul. 2020. My research interest is hardware–software co-design to improve system efficiency. You can find more information through my CV.
+I am currently a Master’s student in Electronic Engineering at Nanyang Technological University. I once served as a research assistant at the Institute of Microelectronics (IME), A*STAR, supervised by Prof. Wang Ling Goh and Dr. Anh-Tuan Do. I received the Bachelor of Engineering degree in Electronic Information Engineering from Wuhan University, Wuhan, China, in Jun. 2024. My research interest is hardware–software co-design to improve system efficiency. You can find more information through my CV.
 
 # 🧭 Research Tracks
 
 Research interests in high-performance computing architectures, efficient hardware acceleration, and task scheduling.
 
 # 📝 Publications 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICCAD 2026</div><img src='images/publication/pace.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICCAD 2027</div><img src='images/publication/pace.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [A CGRA with SIMD and AGU]
 
 R. Harish, V. P. Nambiar, **<u>Y. Liu</u>**, Y. S. Chong, W. L. Goh, R. Dutta, A. T. Do
 
-*International Conference on Computer-Aided Design (ICCAD), 2026 (In preparation)*
+*International Conference on Computer-Aided Design (ICCAD), 2027 (manuscript completed, to be submitted)*
 
 <details>
 <summary>Abstract</summary>
@@ -42,37 +42,36 @@ Coarse-Grained Reconfigurable Arrays (CGRAs) balance low power and flexible comp
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">HPCA 2026</div><img src='images/publication/fractal.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ISCA 2027</div><img src='images/publication/fractal.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[Fractal-Inspired Techniques for High-Resolution Image Generation]
+[Tree-Inspired Techniques for Diffusion Models]
 
 **<u>Y. Liu</u>**, C. Zhou
 
-*International Symposium on High-Performance Computer Architecture (HPCA), 2026 (In preparation)*
+*International Symposium on Computer Architecture (ISCA), 2027 (manuscript completed, to be submitted)*
 
 <details>
 <summary>Abstract</summary>
-Diffusion models generate images via upsampling, but background regions take lots of computation while contributing little to output quality, creating structured redundancy that existing accelerators cannot exploit. We propose an adaptive fractal execution framework that partitions each resolution level into a quadtree and selectively expands only active patches using an activity-ranking unit, maintaining an iso-compute budget across levels. To support this space-adaptive dataflow, we design an SoC accelerator with an inter-level task scheduler and a sparse patch-packing engine—capabilities.
+We propose an adaptive block-dropout framework for diffusion-model denoisers that removes 95.1% of SDXL denoiser FLOPs via tree-structured sparsity, achieving a 15.9× denoising speedup over an NVIDIA L40S GPU dense baseline. We design a sparse diffusion SoC accelerator built around this framework, achieving 2.19×, 2.67×, and 1.56× higher energy efficiency than Cambricon-D, Ditto, and DSTAR respectively, with only 0.63% area overhead. The design is implemented in SystemVerilog and verified via RTL simulation, synthesis, and FPGA validation.
 </details>
 
-<!-- </div>
+</div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2026</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">TCAS-II 2026</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[KV Cache for Point Transformer]
+[CntFPS: Counting-Based Farthest Point Sampling for Energy-Efficient Point-Cloud Acceleration]
 
-**<u>Y. Wu</u>**, Z. Guo, **<u>Y. Liu</u>**, C. Zhou
+**<u>Y. Liu</u>**, X. Zheng, Z. Guo, C. Zhou
 
-*CVPR, 2026 (In preparation)*
+*IEEE Transactions on Circuits and Systems II: Express Briefs (TCAS-II), 2026 (in preparation)*
 
 <details>
 <summary>Abstract</summary>
-Abstract placeholder...
-
-</details> -->
+Farthest Point Sampling (FPS) is the de-facto down-sampling operator in point-cloud neural networks, but it is inherently sequential and hardware-unfriendly. We propose CntFPS, a counting-based reformulation that eliminates the point-to-sample distance computation of conventional FPS. CntFPS adaptively partitions the point cloud with a fractal, density-aware grid and selects representatives using block occupancies and sub-cell priority logic as a distance-free proxy for spatial coverage, removing the serial arg-max dependency and enabling a parallel streaming schedule. In an algorithm-level model, CntFPS is 26× faster than exact FPS at 64k points.
+</details>
 
 </div>
 </div>
@@ -99,13 +98,13 @@ Neural networks (NNs) implemented on field-programmable gate arrays (FPGAs) prov
 <div class='paper-box'><div class='paper-box-image'><div><img src='images/publication/Fornax.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[Fornax: A Lightweight, Energy-Efficient Diffusion Model Accelerator Chip]
+[Nebula: Dependency-Aware Task Scheduler for a Point-Cloud NPU]
 
-High-Performance Computing Chip Scheduler Engineer
+Task Scheduler Engineer, Nebula Point-Cloud NPU (ISSCC 2025)
 
 <details>
 <summary>Abstract</summary>
-Designed a lightweight, energy-efficient diffusion-model accelerator chip aimed at high-performance inference of point cloud and deep-learning tasks, with specialized hardware units for parallel computation and memory-efficient data handling. Within this project, developed a flexible and high-efficiency task scheduler that optimizes execution under complex task-dependency constraints, supports execution in parallel, ensuring maximal utilization of the chip’s resources while maintaining low energy consumption.
+Built a dependency-aware task scheduler for the Nebula point-cloud NPU (ISSCC 2025) that plans data transfers for task graphs with up to 19k nodes. The scheduler allocates on-/off-chip storage and generates data-transfer instructions on the fly, and is deployed on the Nebula chip.
 
 </details>
 
@@ -118,8 +117,8 @@ Designed a lightweight, energy-efficient diffusion-model accelerator chip aimed 
 - *2022.08* Second prize, National College Student Integrated Circuit Innovation and Entrepreneurship Competition (Hubei Division).
 
 # 📖 Educations
-- *2024.08 - 2026.01 (now)*, Master of Electronics, Nanyang Technological University, Singrapore.
-- *2020.09 - 2024.06*, Bachelor of Engineering in Bachelor of Electronic Information Engineering, Wuhan University, Wuhan, China.
+- *2024.09 - 2026.06 (expected)*, Master of Electronics, Nanyang Technological University, Singapore.
+- *2020.09 - 2024.06*, Bachelor of Engineering in Electronic Information Engineering, Wuhan University, Wuhan, China.
 
 # 💻 Internships
 - *2025.09 - 2026.01*, Institute of Microelectronics (IME), A*STAR, Singapore.
