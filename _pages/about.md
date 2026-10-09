@@ -59,7 +59,7 @@ We propose an adaptive block-dropout framework for diffusion-model denoisers tha
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">TCAS-II 2026</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">TCAS-II 2026</div><img src='images/publication/cntfps.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [CntFPS: Counting-Based Farthest Point Sampling for Energy-Efficient Point-Cloud Acceleration]
