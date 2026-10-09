@@ -17,7 +17,7 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-I am currently a Master’s student in Electronic Engineering at Nanyang Technological University. I once served as a research assistant at the Institute of Microelectronics (IME), A*STAR, supervised by Prof. Wang Ling Goh and Dr. Anh-Tuan Do. I received the Bachelor of Engineering degree in Electronic Information Engineering from Wuhan University, Wuhan, China, in Jun. 2024. My research interest is hardware–software co-design to improve system efficiency. You can find more information through my <a href="files/CV_YuntianLiu.pdf" target="_blank">CV</a>.
+I am currently a Master’s student in Electronic Engineering at Nanyang Technological University. I once served as a research assistant at the Institute of Microelectronics (IME), A*STAR, supervised by Prof. <a href="https://dr.ntu.edu.sg/entities/person/Goh-Wang-Ling" target="_blank">Wang Ling Goh</a> and Dr. <a href="https://ieeexplore.ieee.org/author/37408673900" target="_blank">Anh-Tuan Do</a>. I received the Bachelor of Engineering degree in Electronic Information Engineering from Wuhan University, Wuhan, China, in Jun. 2024. My research interest is hardware–software co-design to improve system efficiency. You can find more information through my <a href="files/CV_YuntianLiu.pdf" target="_blank">CV</a>.
 
 # 🧭 Research Tracks
 
@@ -62,7 +62,7 @@ We propose an adaptive block-dropout framework for diffusion-model denoisers tha
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">TCAS-II 2026</div><img src='images/publication/cntfps.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[CntFPS: Counting-Based Farthest Point Sampling for Energy-Efficient Point-Cloud Acceleration]
+[Distance-Free Farthest Point Sampling Accelerator for Point-Cloud Networks]
 
 **<u>Y. Liu</u>**, X. Zheng, Z. Guo, C. Zhou
 
@@ -70,7 +70,7 @@ We propose an adaptive block-dropout framework for diffusion-model denoisers tha
 
 <details>
 <summary>Abstract</summary>
-Farthest Point Sampling (FPS) is the de-facto down-sampling operator in point-cloud neural networks, but it is inherently sequential and hardware-unfriendly. We propose CntFPS, a counting-based reformulation that eliminates the point-to-sample distance computation of conventional FPS. CntFPS adaptively partitions the point cloud with a fractal, density-aware grid and selects representatives using block occupancies and sub-cell priority logic as a distance-free proxy for spatial coverage, removing the serial arg-max dependency and enabling a parallel streaming schedule. In an algorithm-level model, CntFPS is 26× faster than exact FPS at 64k points.
+Farthest Point Sampling (FPS) is the de-facto down-sampling operator in point-cloud neural networks, but it is inherently sequential and hardware-unfriendly. We propose a counting-based reformulation that eliminates the point-to-sample distance computation of conventional FPS. The method adaptively partitions the point cloud with a fractal, density-aware grid and selects representatives using block occupancies and sub-cell priority logic as a distance-free proxy for spatial coverage, removing the serial arg-max dependency and enabling a parallel streaming schedule. In an algorithm-level model, it is 26× faster than exact FPS at 64k points.
 </details>
 
 </div>
