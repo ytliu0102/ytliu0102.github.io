@@ -1,0 +1,7 @@
+*.png binary
+*.ico binary
+*.eot binary
+*.ttf binary
+*.woff binary
+*.svg binary
+*.webmanifest -text
